@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="base.css">
+    <title>Premier Blog</title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Le parc</a></li>
+          <li><a href="#">Les espèces</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article>
+
+        <h1  class="ligne">Parc de la Tête d'Or</h1>
+        <h2  class="ligne">Petit historique</h2>
+
+
+      <hr>
+
+      <img src="img/nature1.jpg">
+
+      <div class="resume">
+        <h2>Parc de la Tête d'Or</h2>
+        <h3>Petit historique</h3>
+        <p >
+          Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.
+        </p>
+        <div class="btn">
+          <a href="#" class="btncolor">Plus <span class="btncolor"> > </span></a>
+        </div>
+      </div>
+    </article>
+
+    <article>
+
+        <h1  class="ligne">Les fleurs</h1>
+        <h2  class="ligne">Orchidées</h2>
+
+
+      <hr>
+
+      <img src="img/nature2.jpg">
+
+      <div class="resume">
+        <h2>Les fleurs</h2>
+        <h3>orchidées</h3>
+        <p>
+          Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.
+        </p>
+        <div class="btn">
+          <a href="#" class="btncolor">Plus <span class="btncolor"> > </span></a>
+        </div>
+      </div>
+    </article>
+
+    <article>
+
+        <h1  class="ligne">Les arbres</h1>
+        <h2  class="ligne">Chênes centenaires</h2>
+
+
+      <hr>
+
+      <img src="img/nature3.jpg">
+
+      <div class="resume">
+        <h2>Les arbres</h2>
+        <h3>Chênes centenaires</h3>
+        <p>
+          Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.
+        </p>
+        <div class="btn">
+          <a href="#" class="btncolor">Plus <span class="btncolor"> > </span></a>
+        </div>
+      </div>
+    </article>
+    <article>
+
+        <h1  class="ligne">Nouvel article</h1>
+
+      <hr>
+
+      <img src="http://placehold.it/700x300">
+      <form>
+        <div>
+          <label for="chpTitre">Titre : </label>
+          <input id="chpTitre" type="text">
+        </div>
+        <div>
+          <label for="chpDate">Date : </label>
+          <input id=chpDate type="text">
+        </div>
+        <div>
+          <label for="chpText">Contenu : </label>
+          <textarea id=chpText type="text"></textarea>
+        </div>
+        <div>
+          <label for="chpMail">Mail : </label>
+          <input id=chpMail type="text">
+        </div>
+        <button  class="btn btncolor"type="button" onclick="blog.ajouteArticle(document.getElementById('chpTitre').value, document.getElementById('chpDate').value, document.getElementById('chpText').value, document.getElementById('chpMail').value)"> Ajouter </button>
+      </form>
+      <div id="article"></div>
+    </article>
+    <script type="text/javascript" src="blog.js">
+    </script>
+  </body>
+</html>
